@@ -1,3 +1,4 @@
+require_relative '../config/environment'
 require_relative '../app/concerns/findable.rb'
 require_relative '../app/models/artist.rb'
 require_relative '../app/models/genre.rb'
@@ -11,4 +12,3 @@ RSpec.configure do |config|
   #     --seed 1234
   config.order = 'default'
 end
- 
