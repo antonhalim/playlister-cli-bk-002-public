@@ -2,6 +2,7 @@ require 'pry'
   class Artist
 
   @@artist = []
+  attr_accessor :name, :songs, :genres
 
   def initialize
     @songs = []
@@ -11,14 +12,6 @@ require 'pry'
 
   def self.reset_all
     @@artist = []
-  end
-
-  def name= name
-    @name = name
-  end
-
-  def name
-    @name
   end
 
   def self.all
@@ -62,13 +55,4 @@ require 'pry'
       end
     end
   end
-
-  def songs
-    @songs
-  end
-
-  def genres
-    @genres
-  end
-
 end

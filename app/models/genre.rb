@@ -1,28 +1,14 @@
 require 'pry'
 
 class Genre
-  @@genre = []
 
+  @@genre = []
+  attr_accessor :artist, :name, :songs
+  
   def initialize
     @songs = []
     @artists = []
     @@genre << self
-    # binding.pry
-  end
-
-  def name= name
-    @name = name
-  end
-
-  def artist
-  end
-  
-  def name
-    @name
-  end
-
-  def songs
-    @songs
   end
 
   def artists
